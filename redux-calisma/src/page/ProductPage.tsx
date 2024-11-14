@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import UrunArama from '../component/molecule/UrunArama'
 import UrunListesi from '../component/organism/UrunListesi'
 import Sepet from '../component/organism/Sepet'
-import { IProduct } from '../models/IProduct';
 
 function ProductPage() {
     // const [sepetList, setSepetList] = useState<IProduct[]>([]);

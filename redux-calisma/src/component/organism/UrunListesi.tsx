@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import UrunCard from '../molecule/UrunCard'
 import { IProduct } from '../../models/IProduct';
 import { fetchGetAllProducts } from '../../store/feature/productSlice';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { ProductDispatch, useAppSelector } from '../../store';
 // interface IUrunListesiProps {
 //   sepeteEkle: (urun: IProduct) => void
