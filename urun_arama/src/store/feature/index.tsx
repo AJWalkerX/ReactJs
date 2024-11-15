@@ -1,3 +1,3 @@
-import ProductSlice from './ProductSlice'
+import UrunSlice from './UrunSlice'
 
-export  {ProductSlice} 
+export  {UrunSlice} 

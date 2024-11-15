@@ -3,14 +3,14 @@ import { IProduct } from "../../models/IProduct";
 
 interface IProductState {
     productList: IProduct[];
-    isLoading: boolean;
+    isProductListLoading: boolean;
     searchList: IProduct[]
     isSearchListLoading: boolean,
     isSearchRejected: boolean
 }
 const inialProductState: IProductState= {
     productList: [],
-    isLoading: false,
+    isProductListLoading: false,
     searchList: [],
     isSearchListLoading: false,
     isSearchRejected: false
@@ -29,16 +29,16 @@ export const fetchGetAllProduct = createAsyncThunk(
 
 export const fetchSearchProduct = createAsyncThunk(
     'product/fetchSearchProduct',
-    async  (search) => {
-        return (await 
+    async  (search: string) => {
+        return await 
         fetch('https://dummyjson.com/products/search?q='+ search)
             .then(res => res.json())
             .then(data => data)
-        )
+        
     }
 )
 
-const productSlice = createSlice({
+const UrunSlice = createSlice({
     name: "product",
     initialState: inialProductState,
     reducers: {
@@ -46,14 +46,14 @@ const productSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(fetchGetAllProduct.pending, (state) => {
-                state.isLoading = true;
+                state.isProductListLoading = true;
             })
             .addCase(fetchGetAllProduct.fulfilled, (state, action) => {
-                state.isLoading = false;
+                state.isProductListLoading = false;
                 state.productList = action.payload.products;
             })
             .addCase(fetchGetAllProduct.rejected, (state) => {
-                state.isLoading = false;
+                state.isProductListLoading = false;
             })
             .addCase(fetchSearchProduct.fulfilled, (state, action) => {
                 state.searchList = action.payload.products;
@@ -70,4 +70,4 @@ const productSlice = createSlice({
     },
 });
 
-export default productSlice.reducer
+export default UrunSlice.reducer
