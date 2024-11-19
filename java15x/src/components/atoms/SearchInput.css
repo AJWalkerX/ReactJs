@@ -1,0 +1,22 @@
+.x-search-input {
+  padding: 5px;
+  background-color: rgb(54, 53, 53);
+  width: 70%;
+  margin-left: 1%;
+  border-radius: 20px;
+}
+
+.x-search-text {
+  border: none;
+  background-color: rgb(54, 53, 53);
+  color: rgb(113, 113, 113);
+  color: white;
+}
+
+.x-search-input:focus-within {
+  border: 1px solid #1da1f2;
+}
+
+.x-search-text:focus {
+  outline: none;
+}

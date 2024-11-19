@@ -1,0 +1,36 @@
+body {
+  color: white;
+}
+
+.x-avatar-img {
+  width: 90%;
+  border-radius: 100%;
+}
+
+.x-follow-text-name {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.x-follow-text-username {
+  color: rgb(113, 113, 113);
+  font-size: 14px;
+}
+
+.x-list {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.x-btn-follow {
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #1da1f2;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 11px;
+}

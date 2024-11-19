@@ -1,0 +1,9 @@
+.x-btn-hover {
+  padding: 6px;
+}
+.x-btn-hover:hover {
+  background-color: #1da1f2 !important;
+  color: white !important;
+  border-radius: 20px !important;
+  cursor: pointer;
+}
