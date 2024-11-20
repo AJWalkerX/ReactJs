@@ -1,11 +1,11 @@
 import React from "react";
-import LeftMenuComponents from "../components/molecules/LeftMenuComponents";
+import LeftMenuComponents from "../../components/molecules/LeftMenuComponents";
 import "./HomePage.css";
-import SearchInput from "../components/atoms/SearchInput";
-import FollowSuggestionList from "../components/molecules/FollowSuggestionList";
-import TrendList from "../components/molecules/TrendList";
-import SharePost from "../components/molecules/SharePost";
-import PostList from "../components/organisms/PostList";
+import SearchInput from "../../components/atoms/SearchInput";
+import FollowSuggestionList from "../../components/molecules/FollowSuggestionList";
+import TrendList from "../../components/molecules/TrendList";
+import SharePost from "../../components/molecules/SharePost";
+import PostList from "../../components/organisms/PostList";
 
 function HomePage() {
   return (
